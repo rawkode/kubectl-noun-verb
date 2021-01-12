@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-shift
+shift 2
 noun=${1}
 
 case ${noun} in
@@ -7,7 +7,7 @@ case ${noun} in
     noun=pods
     ;;
   deployments|deployment|deploys|deploy)
-    noun=pods
+    noun=deployments
     ;;
 
   *)
