@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-shift 2
+shift
 noun=${1}
 
 case ${noun} in
