@@ -3,13 +3,14 @@ kind: Plugin
 metadata:
   name: noun-verbs
 spec:
-  version: "v0.0.1-alpha1"
+  version: "v0.0.1-alpha3"
   homepage: https://github.com/rawkode/kubectl-noun-verb
   shortDescription: "Bringing sanity and composability to kubectl"
   description: "Thanks"
   # 'platforms' specify installation methods for various platforms (os/arch)
   platforms:
-    - selector:
+    - bin: "kubectl-noun-verb.sh"
+      selector:
         matchExpressions:
           - key: "os"
             operator: "In"
