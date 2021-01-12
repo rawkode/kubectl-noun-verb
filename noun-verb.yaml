@@ -3,7 +3,7 @@ kind: Plugin
 metadata:
   name: noun-verbs
 spec:
-  version: "v0.0.1-alpha6"
+  version: "v0.0.1-alpha7"
   homepage: https://github.com/rawkode/kubectl-noun-verb
   shortDescription: "Bringing sanity and composability to kubectl"
   description: "Thanks"
@@ -18,9 +18,9 @@ spec:
               - darwin
               - linux
       # 'uri' specifies .zip or .tar.gz archive URL of a plugin
-      uri: https://github.com/rawkode/kubectl-noun-verb/archive/v0.0.1-alpha5.tar.gz
+      uri: https://github.com/rawkode/kubectl-noun-verb/archive/v0.0.1-alpha6.tar.gz
       # 'sha256' is the sha256sum of the url above
-      sha256: bc1168475aa128a5f3a8bba4deee0dacc1151d2df3908d3a95464d2d91b6de37
+      sha256: 0098481fd186e3a3a5a26d2a51330ac53ccfebc2e6ae25f38aa198044be6ce03
       # 'files' lists which files should be extracted out from downloaded archive
       files:
         - from: "/kubectl-noun-verb*/*.sh"
