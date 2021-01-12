@@ -18,9 +18,9 @@ spec:
               - darwin
               - linux
       # 'uri' specifies .zip or .tar.gz archive URL of a plugin
-      uri: https://github.com/rawkode/kubectl-noun-verb/archive/v0.0.1-alpha6.tar.gz
+      uri: https://github.com/rawkode/kubectl-noun-verb/archive/v0.0.1-alpha7.tar.gz
       # 'sha256' is the sha256sum of the url above
-      sha256: 0098481fd186e3a3a5a26d2a51330ac53ccfebc2e6ae25f38aa198044be6ce03
+      sha256: 4fea5f4767092824e7c475cb7fe71c17b1402dfaf364a0ecf28b0a326d3f6ad2
       # 'files' lists which files should be extracted out from downloaded archive
       files:
         - from: "/kubectl-noun-verb*/*.sh"
