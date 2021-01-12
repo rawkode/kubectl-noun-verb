@@ -1,0 +1,26 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: noun-verbs
+spec:
+  version: "v0.0.1-alpha1"
+  homepage: https://github.com/rawkode/kubectl-noun-verb
+  shortDescription: "Bringing sanity and composability to kubectl"
+  description: "Thanks"
+  # 'platforms' specify installation methods for various platforms (os/arch)
+  platforms:
+    - selector:
+        matchExpressions:
+          - key: "os"
+            operator: "In"
+            values:
+              - darwin
+              - linux
+      # 'uri' specifies .zip or .tar.gz archive URL of a plugin
+      uri: https://github.com/rawkode/kubectl-noun-verb/archive/v0.0.1-alpha1.tar.gz
+      # 'sha256' is the sha256sum of the url above
+      sha256: d5226291665678a9a23268508db696388253840909e50b99dce19d642bcb37a6
+      # 'files' lists which files should be extracted out from downloaded archive
+      files:
+        - from: "/kubectl-noun-verb*/*.sh"
+          to: "."
