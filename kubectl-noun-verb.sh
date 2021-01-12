@@ -3,13 +3,17 @@ shift
 noun=${1}
 
 case ${noun} in
-  (pod|pods|po))
-  noun=pods
-  ;;
-*)
-  echo "Yo, this is bad."
-  exit 1
-  ;;
+  pods|pod|po)
+    noun=pods
+    ;;
+  deployments|deployment|deploys|deploy)
+    noun=pods
+    ;;
+
+  *)
+    echo "Yo, this is bad. We don't support ${noun} (yet; PRs welcome)"
+    exit 1
+    ;;
 esac
 
 shift
